@@ -5,6 +5,12 @@ book:
   title: "Dyadic Structural Equation Modeling in R"
   author: "John Kitchener Sakaluk"
   date: "today"
+  cover-image: cover.png
+  search: true
+  repo-url: https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/
+  repo-actions: [edit, issue, source]
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
   chapters:
     - index.qmd
     - part: "Act I: Getting Started"
@@ -61,6 +67,8 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+execute:
+  freeze: auto
 
 
 
