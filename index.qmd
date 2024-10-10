@@ -1,0 +1,23 @@
+# Preface {.unnumbered}
+
+This is a book about analyzing dyadic data with latent variables using the structural equation modeling (SEM) framework. 
+
+Academics often find reading their own writing to be a "cringe-worthy" experience, and reading that leading sentence is a particularly strange experience for me. I never once thought I'd write a book on something so statistics- and programming-oriented like dyadic SEM:
+
+*I dropped out of 11th grade programming course*
+
+*I nearly failed my 12th grade introductory statistics course*
+
+*My formal training in dyadic data analysis consists entirely of one weeklong workshop.*
+
+And yet...
+
+This is a book about analyzing dyadic data with latent variables using the SEM framework, and I am writing it. And I hope it will prove to be a book worth reading, if you are interested in dyadic data analysis. Why? Because despite my aforementioned reasons to feel surprised that I am writing this book, I *do* know a thing or two about SEM. And maybe in spite of my earlier challenges with statistics and programming--actually, perhaps *because* of them--I will be able to provide you a different way of thinking about dyadic data analysis. These challenges have shaped the way I teach SEM-related content, and directly informed many of the design choices for how I have programmed the *R* package *dySEM*
+
+Indeed, cast through the lens of SEM, the analysis of dyads affords unique opportunities to ask--and answer--some particularly interesting questions. Moreover, dyadic SEM is used so infrequently, as of the writing of this initial draft, so that I think the "market" to make an impact with this approach to data analysis is *wide open*. I hope, in time, through writing this book and developing open-source software like *dySEM*, that this "market" will become a bit more lively.
+
+**The good news**, if I have your interest, is that I plan to write and maintain this book open-access. That means it will be legally free for you to use whenever you want. **The bad news** is that I plan to write and maintain this book open-access. That means that I will write it in bursts--not always in a straightforward linear way--and things will change. Don't be surprised to come back between versions and find I've totally reorganized a section, or a chapter, or even an "Act" of the book. And of course, all of my embarrassing mistakes and gaps in knowledge will be on display for all to see. 
+
+With that in mind, if you notice conceptual or code-based errors, or have requests for features or area of content converage, you'd be doing me a favour by submitting these to the "Issues" page (LINK) of the GitHub repo, where I'll be maintaining the book. 
+
+Otherwise, I hope you enjoy this book and find somethign useful in it. 

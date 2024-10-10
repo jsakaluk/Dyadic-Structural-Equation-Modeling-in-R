@@ -1,0 +1,1 @@
+# Dyadic Invariance Testing in Univariate Cross-Sectional Dyadic SEMs {#sec-invariance}

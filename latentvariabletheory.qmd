@@ -1,0 +1,1 @@
+# Latent Variables in SEM {#sec-latentvariabletheory}

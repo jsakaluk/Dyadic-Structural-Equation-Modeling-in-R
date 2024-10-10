@@ -1,0 +1,1 @@
+# Dyadic Data Structure {#sec-dyadicdatastructure}

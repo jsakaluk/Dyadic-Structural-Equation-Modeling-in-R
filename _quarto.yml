@@ -1,0 +1,66 @@
+project:
+  type: book
+
+book:
+  title: "Dyadic Structural Equation Modeling in R"
+  author: "John Kitchener Sakaluk"
+  date: "today"
+  chapters:
+    - index.qmd
+    - part: "Act I: Getting Started"
+      chapters:
+      - intro.qmd
+      - bigpicture.qmd
+      - dyadicdatastructure.qmd
+      - latentvariabletheory.qmd
+    - part: "Act II: SEM Fundamentals"
+      chapters:
+        - models.qmd
+        - identification.qmd
+        - scalesetting.qmd
+        - modelfitindexes.qmd
+        - modelcomparisonstrategies.qmd
+        - nondyadicexample.qmd
+    - part: "Intermission 1: Meet Your Dyadic Models"
+      chapters:
+        - dyadicmodels.qmd
+    - part: "Act III: Uni-Construct Cross-Sectional Dyadic Models"
+      chapters:
+        - onefactor.qmd
+        - twofactor.qmd
+        - bifactor.qmd
+        - hierarchical.qmd
+        - causal.qmd
+        - invariance.qmd
+    - part: "Act IV: Bi-Construct Cross-Sectional Dyadic Models"
+      chapters:
+        - couple.qmd
+        - apim.qmd
+        - bifactorstructural.qmd
+        - commonfate.qmd
+        - mix.qmd
+    - part: "Intermission 2: What Is '(In)distinguishability'?"
+      chapters:
+        - indistinguishable.qmd
+    - part: "Act V: Advanced Applications of Dyadic SEM"
+      chapters:
+        - thirdvarmods.qmd
+        - multigroup.qmd
+        - longitudinal.qmd
+        - montecarlo.qmd
+        - software.qmd
+    - part: "Fin"
+      chapters:
+        - conclusion.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

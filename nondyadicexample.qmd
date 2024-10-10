@@ -1,0 +1,1 @@
+# A Simple (Non-Dyadic) Example in {lavaan} {#sec-nondyadicexample}
