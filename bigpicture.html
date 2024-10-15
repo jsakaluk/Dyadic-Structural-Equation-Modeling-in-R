@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -69,6 +89,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -202,13 +251,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./identification.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Model Identification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Model Identification and Scale-Setting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./scalesetting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Scale-Setting</span></span></a>
+  <a href="./estimation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Estimating Dyadic SEMs: Common Practices, Problems, and Solutions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -293,6 +342,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Dyadic Invariance Testing in Univariate Cross-Sectional Dyadic SEMs</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Choosing Between Uni-Construct Cross-Sectional Dyadic Models</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -307,31 +362,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./couple.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">The Couple Interdependence Model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Couple Interdependence Model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apim.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Actor-Partner Interdependence Model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Actor-Partner Interdependence Model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bifactorstructural.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Bifactor Structural Model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Bifactor Structural Model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./commonfate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Common Fate Model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">The Common Fate Model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Mixing Univariate Structures in Bivariate Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Mixing Univariate Structures in Bivariate Models</span></span></a>
   </div>
 </li>
       </ul>
@@ -348,7 +403,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./indistinguishable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">(In)distinguishability Is More Complicated than You Think</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">(In)distinguishability Is More Complicated than You Think</span></span></a>
   </div>
 </li>
       </ul>
@@ -365,31 +420,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./thirdvarmods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">“Third Variable” Cross-Sectional Dyadic Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">“Third Variable” Cross-Sectional Dyadic Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./multigroup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Multi-Group Cross-Sectional Dyadic Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Multi-Group Cross-Sectional Dyadic Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./longitudinal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Longitudinal Dyadic Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Longitudinal Dyadic Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./defa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Dyadic Exploratory Factor Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./montecarlo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations of Dyadic Modeling Strategies</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations of Dyadic Modeling Strategies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Contributing to Open-Source Software Development for Dyadic SEM (and Beyond)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Contributing to Open-Source Software Development for Dyadic SEM (and Beyond)</span></span></a>
   </div>
 </li>
       </ul>
@@ -406,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
   </div>
 </li>
       </ul>
@@ -422,8 +483,28 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-dyadic-data" id="toc-what-is-dyadic-data" class="nav-link active" data-scroll-target="#what-is-dyadic-data"><span class="header-section-number">2.1</span> What is “dyadic data”?</a></li>
+  <li><a href="#what-are-latent-variables" id="toc-what-are-latent-variables" class="nav-link" data-scroll-target="#what-are-latent-variables"><span class="header-section-number">2.2</span> What are “latent variables”?</a></li>
+  <li><a href="#what-is-structural-equation-modeling-sem" id="toc-what-is-structural-equation-modeling-sem" class="nav-link" data-scroll-target="#what-is-structural-equation-modeling-sem"><span class="header-section-number">2.3</span> What is “structural equation modeling (SEM)” ?</a></li>
+  <li><a href="#bringing-it-all-together" id="toc-bringing-it-all-together" class="nav-link" data-scroll-target="#bringing-it-all-together"><span class="header-section-number">2.4</span> Bringing it all together</a>
+  <ul class="collapse">
+  <li><a href="#what-is-dyadic-structural-equation-modeling" id="toc-what-is-dyadic-structural-equation-modeling" class="nav-link" data-scroll-target="#what-is-dyadic-structural-equation-modeling"><span class="header-section-number">2.4.1</span> What is “dyadic structural equation modeling”?</a></li>
+  <li><a href="#why-use-dyadic-sem-vs.-alternative-modeling-frameworks" id="toc-why-use-dyadic-sem-vs.-alternative-modeling-frameworks" class="nav-link" data-scroll-target="#why-use-dyadic-sem-vs.-alternative-modeling-frameworks"><span class="header-section-number">2.4.2</span> Why use dyadic SEM vs.&nbsp;Alternative Modeling Frameworks?</a></li>
+  </ul></li>
+  <li><a href="#uni-construct-vs.-bi-construct-and-beyond-dyadic-sems" id="toc-uni-construct-vs.-bi-construct-and-beyond-dyadic-sems" class="nav-link" data-scroll-target="#uni-construct-vs.-bi-construct-and-beyond-dyadic-sems"><span class="header-section-number">2.5</span> Uni-construct vs.&nbsp;Bi-construct (and Beyond) dyadic SEMs</a></li>
+  <li><a href="#fitting-dyadic-sems" id="toc-fitting-dyadic-sems" class="nav-link" data-scroll-target="#fitting-dyadic-sems"><span class="header-section-number">2.6</span> Fitting Dyadic SEMs</a>
+  <ul class="collapse">
+  <li><a href="#software-choices" id="toc-software-choices" class="nav-link" data-scroll-target="#software-choices"><span class="header-section-number">2.6.1</span> Software Choices</a></li>
+  <li><a href="#using-the-dysem-and-lavaan-packages-for-r" id="toc-using-the-dysem-and-lavaan-packages-for-r" class="nav-link" data-scroll-target="#using-the-dysem-and-lavaan-packages-for-r"><span class="header-section-number">2.6.2</span> Using the <em>dySEM</em> and <em>lavaan</em> Packages for <em>R</em></a></li>
+  </ul></li>
+  <li><a href="#pushing-the-boundaries-of-dyadic-sem" id="toc-pushing-the-boundaries-of-dyadic-sem" class="nav-link" data-scroll-target="#pushing-the-boundaries-of-dyadic-sem"><span class="header-section-number">2.7</span> Pushing the Boundaries of dyadic SEM</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/edit/main/bigpicture.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/blob/main/bigpicture.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -447,8 +528,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This is a book about analyzing dyadic data with latent variables using the SEM framework, and I think your experience reading the remainder of the book will be aided by providing you with a rapid-fire tour of the bigger themes within it (and an introduction to some key jargon).</p>
+<p>So, let us begin with that introductory phrase: analyzing <em>dyadic data</em> with <em>latent variables</em> using <em>the SEM framework</em>.</p>
+<section id="what-is-dyadic-data" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="what-is-dyadic-data"><span class="header-section-number">2.1</span> What is “dyadic data”?</h2>
+<p>Putting a finger on what dyadic data is, specifically, is surprisingly difficult when you begin to think of variety of ways in which the organisms we study (people, animals, nation-states, etc.) can, and do, “pair up”. And so in some ways, it’s easier to begin by stating what dyadic data <em>is not</em>.</p>
+<p><strong>Dyadic data is not data from organisms that have nothing in common</strong>. How much nothing? Total. Imagine you ran a goofy study where you experimentally assigned people to pairs and estimated the correlation between pairs on <em>Trait X</em>. In the long run, it should be <span class="math inline">\(r = .00\)</span>, right? Okay: those data are <em>not dyadic</em>. You should be fine to structure these data in such a way that allows you to analyze them as coming from independent observations, and go on with your business.</p>
+<p>Eliminating data from organisms that have nothing in common still leaves a lot of possible contexts on the table as potentially dyadic. At the opposite end of the spectrum of <em>dyadic-ness</em> are data that come from organisms that totally overlap. Though contexts like this are rare (rare enough that I can only think of: data from a sample of identical twins), they probably would satisfy our intuition-based criteria of what is dyadic data.</p>
+<p>The tricky cases are those in-between: are data from research where organsism have something (but not everything) in common, <em>dyadic</em> data? For example, what if you collect data from a classroom (<span class="math inline">\(n = 200\)</span>) and a couple of pairs of individuals (<em>pair 1</em> and <em>pair 2</em>, who otherwise do not interact) happen to share a hometown? Or in a sample of beetles ($n = 60) a few pairs (<em>pair 1</em>, <em>pair 2</em>, and <em>pair 3</em>), happen to be sibblings from the same brood?</p>
+<div id="fig-butterfly" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-butterfly-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/isthisdyadic.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-butterfly-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: The first of many stats-related memes
+</figcaption>
+</figure>
+</div>
+<p>Though examples like these contain <em>dyads</em>, I would not call the affiliated datasets <em>dyadic</em>. This is because the paired nature of some observations is inconsistent; there are a few dyads/pairs, but most of the data otherwise comes from individuals, and it’s not clear how a researcher would systematically be able to identify the linked observations between the small number of dyads.</p>
+<p>Instead, <strong><em>let us consider data to be “dyadic data” if it is dyadic by design</em></strong>. That is, a researcher voluntarily deployed an approach to collecting data in such a way that all organisms in the sample are members of a dyad, known to the researcher. In this book, we will exclusively deal with an approach to analysis of quantitative dyadic data, though qualitative dyadic research designs are also possible (at least for human-based samples).</p>
+<p>We will see in <a href="dyadicdatastructure.html" class="quarto-xref"><span>Chapter 3</span></a> that there are further ways we can conceptualize and categorize dyadic data–and the analytic techinques in this book are most useful to only one of these dyadic data designs–but that is a sufficient understanding of “dyadic data” for now.</p>
+</section>
+<section id="what-are-latent-variables" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="what-are-latent-variables"><span class="header-section-number">2.2</span> What are “latent variables”?</h2>
+<p>What, then, are these so-called <em>latent variables</em>, and what is useful or interesting about them? I like <a href="https://www.dictionary.com/browse/latent">Dictionary.com’s definition of <em>latent</em></a> as a starting place:</p>
+<blockquote class="blockquote">
+<p>[leyt-nt] present but not visible, apparent, or activated; existing as potential</p>
+</blockquote>
+<p>But what use is a variable that you cannot directly observe? Social scientists have been interested in latent variables since as far back as the late 1800’s and early 1900’s. A classic example is <span class="citation" data-cites="spearman_general_1904">Spearman (<a href="references.html#ref-spearman_general_1904" role="doc-biblioref">1904</a>)</span> (of the “Spearman correlation coefficient” fame)(REF). <a href="https://en.wikipedia.org/wiki/Charles_Spearman">Spearman was psychologist</a> who was interested in, among other things, mental abilities. At the time, there were a number of competing theories of ways to categorize “types” or “kinds” of mental abilities (e.g., visual, memory-based, spatial, etc.,), and how to organize them. Spearman’s contributition to this literature was noteworthy, as he provided evidence for a <em>latent</em> kind of <em>generalized intelligence</em> (which he dubbed “g”)–not a form of mental ability you could directly see or appraise, but which shaped performance on all tests of various mental abilities to one extent or another. The impact of this work was tremendous, both in terms of its theoretical value and the way it contributed to subsequent statistical methodology. With respect to the former, Spearman helped to establish the plausibility of latent variables (of which generalized intelligence may just be one) as important determinants of social and psychological processes. Methodologically, meanwhile, through is work, Spearman “casualy” provided one of the first exemplars of factor analysis (and a very specific kind of it, at that)–an analytic approach that would come to play a central role in a staggering amount of future research. Indeed, factor analysis is the beating heart of many of the models of dyadic data we will consider in this book.</p>
+<p>The notion of latent generalized intelligence may seem reasonably intuitive, but what of latent variables in dyadic data? Here, I must profess, it’s easy for me to provide exemplars that work in the discipline of psychology, and much more difficult to provide examples that work in disciplines farther afield (e.g., ecology). Still, let me try.</p>
+<p>For my money, the game-changing moment in Psychology to open the door to the study of latent variables was the <a href="https://en.wikipedia.org/wiki/Cognitive_revolution#:~:text=The%20cognitive%20revolution%20was%20an,field%20known%20as%20cognitive%20science.">Cognitive Revolution</a>. The theoretical coin of the realm before the Cognitive Revolution was, for many decades, <a href="https://en.wikipedia.org/wiki/Behaviorism">Behaviorism</a>. And under Behaviorism–specifically, the edicts of “Methodological Behaviorism” (WATSON 1924 REF)–the experience of thought and feeling was thought to be bereft of scientific value. Only that which could be seen, directly–behavior–was amenable to scientific inqiury. The Cognitive Revolution was largely responsible for upending this ban on studying thoughts and feelings, and with that, it became open-season to scientifically study intrapsychic phenomena like attitudes, beliefs, emotions, motives, and values. These concepts represent the kind of psychological terrain where wild latent variables may be found, and studied.</p>
+</section>
+<section id="what-is-structural-equation-modeling-sem" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="what-is-structural-equation-modeling-sem"><span class="header-section-number">2.3</span> What is “structural equation modeling (SEM)” ?</h2>
+</section>
+<section id="bringing-it-all-together" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="bringing-it-all-together"><span class="header-section-number">2.4</span> Bringing it all together</h2>
+<section id="what-is-dyadic-structural-equation-modeling" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="what-is-dyadic-structural-equation-modeling"><span class="header-section-number">2.4.1</span> What is “dyadic structural equation modeling”?</h3>
+</section>
+<section id="why-use-dyadic-sem-vs.-alternative-modeling-frameworks" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="why-use-dyadic-sem-vs.-alternative-modeling-frameworks"><span class="header-section-number">2.4.2</span> Why use dyadic SEM vs.&nbsp;Alternative Modeling Frameworks?</h3>
+</section>
+</section>
+<section id="uni-construct-vs.-bi-construct-and-beyond-dyadic-sems" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="uni-construct-vs.-bi-construct-and-beyond-dyadic-sems"><span class="header-section-number">2.5</span> Uni-construct vs.&nbsp;Bi-construct (and Beyond) dyadic SEMs</h2>
+</section>
+<section id="fitting-dyadic-sems" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="fitting-dyadic-sems"><span class="header-section-number">2.6</span> Fitting Dyadic SEMs</h2>
+<section id="software-choices" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="software-choices"><span class="header-section-number">2.6.1</span> Software Choices</h3>
+</section>
+<section id="using-the-dysem-and-lavaan-packages-for-r" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="using-the-dysem-and-lavaan-packages-for-r"><span class="header-section-number">2.6.2</span> Using the <em>dySEM</em> and <em>lavaan</em> Packages for <em>R</em></h3>
+</section>
+</section>
+<section id="pushing-the-boundaries-of-dyadic-sem" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="pushing-the-boundaries-of-dyadic-sem"><span class="header-section-number">2.7</span> Pushing the Boundaries of dyadic SEM</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-spearman_general_1904" class="csl-entry" role="listitem">
+Spearman, C. 1904. <span>“"<span>General</span> <span>Intelligence</span>," <span>Objectively</span> <span>Determined</span> and <span>Measured</span>.”</span> <em>The American Journal of Psychology</em> 15 (2): 201–92. <a href="https://doi.org/10.2307/1412107">https://doi.org/10.2307/1412107</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -888,4 +1033,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/edit/main/bigpicture.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/blob/main/bigpicture.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/edit/main/bigpicture.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/blob/main/bigpicture.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
