@@ -1,1 +1,1 @@
-# Model Identification {#sec-identification}
+# Model Identification and Scale-Setting {#sec-identification}

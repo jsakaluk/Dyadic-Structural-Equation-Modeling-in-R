@@ -1,2 +1,55 @@
 # The Big Picture {#sec-bigpicture}
 
+This is a book about analyzing dyadic data with latent variables using the SEM framework, and I think your experience reading the remainder of the book will be aided by providing you with a rapid-fire tour of the bigger themes within it (and an introduction to some key jargon). 
+
+So, let us begin with that introductory phrase: analyzing *dyadic data* with *latent variables* using *the SEM framework*.
+
+## What is "dyadic data"?
+
+Putting a finger on what dyadic data is, specifically, is surprisingly difficult when you begin to think of variety of ways in which the organisms we study (people, animals, nation-states, etc.) can, and do, "pair up". And so in some ways, it's easier to begin by stating what dyadic data *is not*.
+
+**Dyadic data is not data from organisms that have nothing in common**. How much nothing? Total. Imagine you ran a goofy study where you experimentally assigned people to pairs and estimated the correlation between pairs on *Trait X*. In the long run, it should be $r = .00$, right? Okay: those data are *not dyadic*. You should be fine to structure these data in such a way that allows you to analyze them as coming from independent observations, and go on with your business. 
+
+Eliminating data from organisms that have nothing in common still leaves a lot of possible contexts on the table as potentially dyadic. At the opposite end of the spectrum of *dyadic-ness* are data that come from organisms that totally overlap. Though contexts like this are rare (rare enough that I can only think of: data from a sample of identical twins), they probably would satisfy our intuition-based criteria of what is dyadic data.
+
+The tricky cases are those in-between: are data from research where organsism have something (but not everything) in common, *dyadic* data? For example, what if you collect data from a classroom ($n = 200$) and a couple of pairs of individuals (*pair 1* and *pair 2*, who otherwise do not interact) happen to share a hometown? Or in a sample of beetles ($n = 60) a few pairs (*pair 1*, *pair 2*, and *pair 3*), happen to be sibblings from the same brood? 
+
+![The first of many stats-related memes](./img/isthisdyadic.jpg){#fig-butterfly}
+
+Though examples like these contain *dyads*, I would not call the affiliated datasets *dyadic*. This is because the paired nature of some observations is inconsistent; there are a few dyads/pairs, but most of the data otherwise comes from individuals, and it's not clear how a researcher would systematically be able to identify the linked observations between the small number of dyads.
+
+Instead, ***let us consider data to be "dyadic data" if it is dyadic by design***. That is, a researcher voluntarily deployed an approach to collecting data in such a way that all organisms in the sample are members of a dyad, known to the researcher. In this book, we will exclusively deal with an approach to analysis of quantitative dyadic data, though qualitative dyadic research designs are also possible (at least for human-based samples).
+
+We will see in @sec-dyadicdatastructure that there are further ways we can conceptualize and categorize dyadic data--and the analytic techinques in this book are most useful to only one of these dyadic data designs--but that is a sufficient understanding of "dyadic data" for now.
+
+## What are "latent variables"?
+
+What, then, are these so-called *latent variables*, and what is useful or interesting about them? I like [Dictionary.com's definition of *latent*](https://www.dictionary.com/browse/latent) as a starting place:
+
+> [leyt-nt] present but not visible, apparent, or activated; existing as potential
+
+But what use is a variable that you cannot directly observe? Social scientists have been interested in latent variables since as far back as the late 1800's and early 1900's. A classic example is @spearman_general_1904 (of the "Spearman correlation coefficient" fame)(REF). [Spearman was psychologist](https://en.wikipedia.org/wiki/Charles_Spearman) who was interested in, among other things, mental abilities. At the time, there were a number of competing theories of ways to categorize "types" or "kinds" of mental abilities (e.g., visual, memory-based, spatial, etc.,), and how to organize them. Spearman's contributition to this literature was noteworthy, as he provided evidence for a *latent* kind of *generalized intelligence* (which he dubbed "g")--not a form of mental ability you could directly see or appraise, but which shaped performance on all tests of various mental abilities to one extent or another. The impact of this work was tremendous, both in terms of its theoretical value and the way it contributed to subsequent statistical methodology. With respect to the former, Spearman helped to establish the plausibility of latent variables (of which generalized intelligence may just be one) as important determinants of social and psychological processes. Methodologically, meanwhile, through is work, Spearman "casualy" provided one of the first exemplars of factor analysis (and a very specific kind of it, at that)--an analytic approach that would come to play a central role in a staggering amount of future research. Indeed, factor analysis is the beating heart of many of the models of dyadic data we will consider in this book. 
+
+The notion of latent generalized intelligence may seem reasonably intuitive, but what of latent variables in dyadic data? Here, I must profess, it's easy for me to provide exemplars that work in the discipline of psychology, and much more difficult to provide examples that work in disciplines farther afield (e.g., ecology). Still, let me try. 
+
+For my money, the game-changing moment in Psychology to open the door to the study of latent variables was the [Cognitive Revolution](https://en.wikipedia.org/wiki/Cognitive_revolution#:~:text=The%20cognitive%20revolution%20was%20an,field%20known%20as%20cognitive%20science.). The theoretical coin of the realm before the Cognitive Revolution was, for many decades, [Behaviorism](https://en.wikipedia.org/wiki/Behaviorism). And under Behaviorism--specifically, the edicts of "Methodological Behaviorism" (WATSON 1924 REF)--the experience of thought and feeling was thought to be bereft of scientific value. Only that which could be seen, directly--behavior--was amenable to scientific inqiury. The Cognitive Revolution was largely responsible for upending this ban on studying thoughts and feelings, and with that, it became open-season to scientifically study intrapsychic phenomena like attitudes, beliefs, emotions, motives, and values. These concepts represent the kind of psychological terrain where wild latent variables may be found, and studied.
+
+## What is "structural equation modeling (SEM)" ?
+
+## Bringing it all together
+
+### What is "dyadic structural equation modeling"?
+
+### Why use dyadic SEM vs. Alternative Modeling Frameworks?
+
+## Uni-construct vs. Bi-construct (and Beyond) dyadic SEMs
+
+## Fitting Dyadic SEMs
+
+### Software Choices
+
+### Using the *dySEM* and *lavaan* Packages for *R*
+
+## Pushing the Boundaries of dyadic SEM
+
+

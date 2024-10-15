@@ -1,1 +1,7 @@
 # (In)distinguishability Is More Complicated than You Think {#sec-indistinguishable}
+
+Here is an example of an equation where different parts are color-coded:
+
+$$
+E = mc^2 \quad \text{where} \quad \textcolor{red}{E} = \textcolor{blue}{m} \cdot \textcolor{green}{c^2}
+$$
