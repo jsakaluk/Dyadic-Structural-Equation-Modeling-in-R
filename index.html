@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="John Kitchener Sakaluk">
-<meta name="dcterms.date" content="2024-10-15">
+<meta name="dcterms.date" content="2024-10-22">
 
 <title>Dyadic Structural Equation Modeling in R</title>
 <style>
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./support.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -148,6 +148,24 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use and Support this Open-Access Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About the Author</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -430,6 +448,23 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sufficient_R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A Review of Sufficient <em>R</em> for Dyadic SEM</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -466,7 +501,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 15, 2024</p>
+      <p class="date">October 22, 2024</p>
     </div>
   </div>
   
@@ -481,17 +516,17 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1><p><img src="cover.png" title="Dyadic Structural Equation Modeling in R" class="quarto-cover-image img-fluid"></p>
-<p>This is a book about analyzing dyadic data with latent variables using the structural equation modeling (SEM) framework.</p>
+<p>This is a book about analyzing dyadic data with latent variables using the structural equation modeling (SEM) framework in <em>R</em>.</p>
 <p>Academics often find reading their own writing to be a “cringe-worthy” experience, and reading that leading sentence is a particularly strange experience for me. I never once thought I’d write a book on something so statistics- and programming-oriented like dyadic SEM:</p>
 <p><em>I dropped out of 11th grade programming course</em></p>
 <p><em>I nearly failed my 12th grade introductory statistics course</em></p>
 <p><em>My formal training in dyadic data analysis consists entirely of one weeklong workshop.</em></p>
 <p>And yet…</p>
-<p>This is a book about analyzing dyadic data with latent variables using the SEM framework, and I am writing it. And I hope it will prove to be a book worth reading, if you are interested in dyadic data analysis. Why? Because despite my aforementioned reasons to feel surprised that I am writing this book, I <em>do</em> know a thing or two about SEM. And maybe in spite of my earlier challenges with statistics and programming–actually, perhaps <em>because</em> of them–I will be able to provide you a different way of thinking about dyadic data analysis. These challenges have shaped the way I teach SEM-related content, and directly informed many of the design choices for how I have programmed the <em>R</em> package <em>dySEM</em></p>
+<p>This is a book about analyzing dyadic data with latent variables using the SEM framework in <em>R</em>, and I am writing it. And I hope it will prove to be a book worth reading, if you are interested in dyadic data analysis. Why? Because despite my aforementioned reasons to feel surprised that I am writing this book, I <em>do</em> know a thing or two about SEM and <em>R</em>. And maybe in spite of my earlier challenges with statistics and programming–actually, perhaps <em>because</em> of them–I will be able to provide you a different way of thinking about dyadic data analysis. These challenges have shaped the way I teach SEM-related content, and directly informed many of the design choices for how I have programmed the <em>R</em> package <em>dySEM</em></p>
 <p>Indeed, cast through the lens of SEM, the analysis of dyads affords unique opportunities to ask–and answer–some particularly interesting questions. Moreover, dyadic SEM is used so infrequently, as of the writing of this initial draft, so that I think the “market” to make an impact with this approach to data analysis is <em>wide open</em>. I hope, in time, through writing this book and developing open-source software like <em>dySEM</em>, that this “market” will become a bit more lively.</p>
 <p><strong>The good news</strong>, if I have your interest, is that I plan to write and maintain this book open-access. That means it will be legally free for you to use whenever you want. <strong>The bad news</strong> is that I plan to write and maintain this book open-access. That means that I will write it in bursts–not always in a straightforward linear way–and things will change. Don’t be surprised to come back between versions and find I’ve totally reorganized a section, or a chapter, or even an “Act” of the book. And of course, all of my embarrassing mistakes and gaps in knowledge will be on display for all to see.</p>
-<p>With that in mind, if you notice conceptual or code-based errors, or have requests for features or area of content converage, you’d be doing me a favour by submitting these to the “Issues” page (LINK) of the GitHub repo, where I’ll be maintaining the book.</p>
-<p>Otherwise, I hope you enjoy this book and find somethign useful in it.</p>
+<p>With that in mind, if you notice conceptual or code-based errors, or have requests for features or area of content converage, you’d be doing me a favour by submitting these to the “Issues” page of the GitHub repo, where I’ll be maintaining the book, by using the <strong>Report an issue</strong> button in the top right of the screen.</p>
+<p>Otherwise, I hope you enjoy this book and find something useful in it.</p>
 
 
 </section>
@@ -921,8 +956,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./support.html" class="pagination-link" aria-label="How to Use and Support this Open-Access Book">
+        <span class="nav-page-text">How to Use and Support this Open-Access Book</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
