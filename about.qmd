@@ -1,0 +1,32 @@
+# About the Author {.unnumbered}
+
+Hi! I am [John Sakaluk](https://scholar.google.com/citations?user=a6zi3mRHKK0C&hl=en) (pronounced: "Sack-uh-luck", like a bag of luck)! 
+
+![A wild John appeared!](./img/john.jpg){fig-align="right"}
+
+
+I use he/him prounouns, and I live/work in Canada on the traditional lands of the [Anishinaabek](https://en.wikipedia.org/wiki/Anishinaabe), [Haudenosaunee](https://en.wikipedia.org/wiki/Iroquois#Names), [Lūnaapéewak](https://delawarenation.on.ca/), and [Chonnonton](https://en.wikipedia.org/wiki/Neutral_Confederacy) Nations
+
+What's most relevant, for you, is that:
+
+- [I am an Assistant Professor](https://www.psychology.uwo.ca/people/faculty/Sakaluk.html) in the [Department of Psychology](https://psychology.uwo.ca/) at [Western University](https://uwo.ca/) (formerly/occassionally still refered to as the University of Western Ontario) in [London](https://en.wikipedia.org/wiki/London,_Ontario) (not *that* London), in Southwestern Ontario, Canada. 
+- My [research program](https://scholar.google.com/citations?user=a6zi3mRHKK0C&hl=en) spans the domains of sexuality, relationships, and psychological interventions. Most of what I'm known for would be considered applied quantitative psychology work, in which I use (or promote) emerging or improved analytic techniques, usually either for the purpose of psychometrics or research synthesis
+- I was a postdoctoral fellow in [Dr. Emily Impett's](https://www.utm.utoronto.ca/psychology/people/emily-impett) lab, in which she and her students often conduct dyadic data analyses
+- Thanks to Emily's support, I took a week-long dyadic workshop from [Dr. Dave Kenny](https://psychology.uconn.edu/person/david-a-kenny/) and [Dr. Tessa West](https://as.nyu.edu/faculty/tessa-west.html). This workshop was mostly taught through the lens of MLM (and in SPSS), but was nonetheless was a useful training exercise that got me thinking a lot about dyadic data and why it is analyzed the way it is (and isn't)
+- My "expertise" in dyadic data analysis is quite a recent phenomenon--emerging years after said workshop. During the submission of an article for a special issue in *Personal Relationships* (see @sakaluk_dyadic_2021), the reviewers encouraged us to develop some *R* functionality to help with the computation of dyadic-versions of invariance testing effect size indexes (from @nye_effect_2011). Working through this request unlocked some programming barriers in my brain, and a few bursts of impromptu coding later, I had laid the foundations for the [*dySEM* package for *R*](https://jsakaluk.github.io/dySEM/) (see [here](https://cran.r-project.org/web/packages/dySEM/index.html) for link to CRAN site). After *dySEM* kicked around for awhile, and I gave a few smaller talks on dyadic SEM, I was invited to give the closing keynote at the 2023 Close Relationships Preconference of the Society for Personality and Social Psychology (REF OR SLIDES), during which I mostly evangilized abou the benefits of dyadic SEM. That talk--which was received with a strange amount of controversy--seems to have catalyzed things for this portion of my research program, as an invited review paper on dyadic SEM (REF) and a *dySEM* workshop (REF OR SLIDES) have quickly followed. 
+- Though my "expertise" in dyadic data analysis is a recent phemonenon, I have extensive training and experience with SEM and *R*. My first foray with factor analysis was as a 4th year undergrad working with [Dr. Robin Milhausen](https://family.uoguelph.ca/people/robin-milhausen); I borrowed her copy of *Multivariate Statistics* (@tabachnick_using_2012) and my mind has been lost to latent variable modeling ever since. Afterwards, as a graduate student at the [University of Kansas](https://ku.edu/), I took multiple courses on structural equation modeling with latent variables, including from Drs. Carol Wood, [Mijke Rhemtulla](https://psychology.ucdavis.edu/people/mijke-rhemtulla), [Alexander Schoemann](https://psychology.ecu.edu/people/schoemann/), and [Todd Little](https://www.depts.ttu.edu/education/our-people/Faculty/todd_little.php). This included learning how to apply SEM in contexts with dependent data ^[Todd was just finishing his now go-to book on Longitudinal SEM (@little_longitudinal_2013) when I took his Longitudinal SEM class. Doing the proof-reading and code-testing for one of his book's chapters was a legitimate final project option for that course--a possibility I look back on with some sardonic amusement, now that I am writing a book of my own and have my own graduate statistics classes.], which is largely what has enabled me ot move into dyadic SEM even though I have not often analyzed primary dyadic data. It was around my 3rd year of grad school that I began routinely using the [*psych*](https://cran.r-project.org/web/packages/psych/index.html) and [*lavaan*](https://cran.r-project.org/web/packages/lavaan/index.html) packages for latent variable modeling in *R*.
+- Since then, I have routinely used and taught *R* and SEM--10 years and counting--including to some leading dyadic data analysis folks in the field. 
+- Most recently, I have added the label of *R* developer to my set of experiences, having taken the plunge of *R* package creation and maintenance.
+
+Outside of my work-related bona fides, I am known for:
+
+- hailing from [North Bay, ON](https://en.wikipedia.org/wiki/North_Bay,_Ontario)
+- making good food and drinks
+- having a peculiar brand of academic-speak in both writing and talking^[Emily's lab used to call this "Johnspeak"; you can credit (or blame) my late Grandmother, who was a powerfully idiomatic speaker]
+- code-switching between sounding very American (I'm a very enthusiastic "y'all"-er), or very Canadian (think [Letterkenny](https://en.wikipedia.org/wiki/Letterkenny_(TV_series)))
+- using moderately? profane language
+- playing basketball (I play a [very watered down] [Shawn Marion](https://en.wikipedia.org/wiki/Shawn_Marion)-like game)
+- having brutal handwriting
+- typing very loudly (I snap my spacebar particularly hard, for some reason)
+- having a very wonderful, cheerful partner, and a very large, goob-tastic dog
+

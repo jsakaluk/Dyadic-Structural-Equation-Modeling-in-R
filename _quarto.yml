@@ -13,6 +13,9 @@ book:
   sharing: [twitter, facebook]
   chapters:
     - index.qmd
+    - support.qmd
+    - about.qmd
+    - acknowledgements.qmd
     - part: "Act I: Getting Started"
       chapters:
       - intro.qmd
@@ -61,6 +64,8 @@ book:
       chapters:
         - conclusion.qmd
     - references.qmd
+  appendices:
+    - sufficient_R.qmd
 
 bibliography: references.bib
 
