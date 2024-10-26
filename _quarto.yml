@@ -72,11 +72,9 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-    footer: "Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)."
+    footer: "Licensed under CC BY-NC-ND 4.0."
   pdf:
     documentclass: scrreprt
-    include-in-header: |
-      Licensed under Creative Commons BY-NC-ND 4.0
 execute:
   freeze: auto
 

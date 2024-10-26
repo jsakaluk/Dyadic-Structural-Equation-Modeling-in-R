@@ -201,7 +201,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to Use and Support this Open-Access Book</span></a>
+ <span class="menu-text">License and Supporting this Open-Access Book</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -587,6 +587,31 @@ Figure&nbsp;2.1: The first of many stats-related memes
 <blockquote class="blockquote">
 <p>[leyt-nt] present but not visible, apparent, or activated; existing as potential</p>
 </blockquote>
+<div id="fig-sanjay" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sanjay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/sanjay_meme.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sanjay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Dr.&nbsp;Srivastava is one of “the greats” when it comes to stats-related memes
+</figcaption>
+</figure>
+</div>
+<p>Typically, researchers depict latent variables (vs.&nbsp;“<em>observed</em>” or “<em>manifest</em>” or “<em>indicator</em>” variables) in a particular way when creating figures of their statistical models. Specifically, variables depicted as circles or ovals are latent variables, whereas variables depicted as squares or rectangles are observed variables (i.e., that are directly measureable). This can get a bit confusing, for a couple reasons, including:</p>
+<ul>
+<li>the same psychological construct (e.g., “self-esteem”)–and even the same measure of the same construct (e.g., the Rosenberg Self-Esteem Scale)–can be specified as a latent variable in one model, and an observed variable (e.g., an average or sum of item scores) in another. That is, even if someone believes a construct to be latent, how it is modeled remains an analyti choice, and</li>
+<li>observed variables take the same shape in these kinds of diagrams (i.e., squares) but can have <em>very</em> different causal roles in the model. For example, one observed variable may be for the responses to a particular item for a given latent variable (modeled latently); another may be a predictor variable; another may be an outcome variable.</li>
+</ul>
+<div id="fig-obsvslatent" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-obsvslatent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/observed_vs_latent.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-obsvslatent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Model 1: a model of observed variables; Model 2: a model of latent variables and observed variables (in different causal roles)
+</figcaption>
+</figure>
+</div>
 <section id="a-brief-bit-of-history" class="level3" data-number="2.2.1">
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="a-brief-bit-of-history"><span class="header-section-number">2.2.1</span> A Brief Bit of History</h3>
 <p>But what use is a variable that you cannot directly observe? Social scientists have been interested in latent variables since as far back as the late 1800’s and early 1900’s. A classic example is <span class="citation" data-cites="spearman_general_1904">Spearman (<a href="references.html#ref-spearman_general_1904" role="doc-biblioref">1904</a>)</span> (of the “Spearman correlation coefficient” fame)(REF). <a href="https://en.wikipedia.org/wiki/Charles_Spearman">Spearman was psychologist</a> who was interested in, among other things, mental abilities. At the time, there were a number of competing theories of ways to categorize “types” or “kinds” of mental abilities (e.g., visual, memory-based, spatial, etc.,), and how to organize them. Spearman’s contributition to this literature was noteworthy, as he provided evidence for a <em>latent</em> kind of <em>generalized intelligence</em> (which he dubbed “g”)–not a form of mental ability you could directly see or appraise, but which shaped performance on all tests of various mental abilities to one extent or another. The impact of this work was tremendous, both in terms of its theoretical value and the way it contributed to subsequent statistical methodology. With respect to the former, Spearman helped to establish the plausibility of latent variables (of which generalized intelligence may just be one) as important determinants of social and psychological processes. Methodologically, meanwhile, through is work, Spearman “casualy” provided one of the first exemplars of factor analysis (and a very specific kind of it, at that)–an analytic approach that would come to play a central role in a staggering amount of future research. Indeed, factor analysis is the beating heart of many of the models of dyadic data we will consider in this book.</p>
@@ -596,7 +621,17 @@ Figure&nbsp;2.1: The first of many stats-related memes
 <section id="typologies-of-latent-variable-models" class="level3" data-number="2.2.2">
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="typologies-of-latent-variable-models"><span class="header-section-number">2.2.2</span> Typologies of Latent Variable Models</h3>
 <p>The kind of latent variables we will focus on modeling, throughout this book, have a few notable features that we will expand upon later, but which must be at least “gestured” at now.</p>
-<p>First, and most importantly, they are <strong><em>reflective</em></strong> latent variables, which means the direction of causality flows from unobservable entity, to measurable entity. For example, latent depression–which cannot be directly seen, or assessed–<em>causes</em> someone to lose sleep, have low mood, etc. (and thereby indicate as much in their questionnaire responses). Not the other way around. <em>Those</em> kinds of latent variables are referred to as <strong><em>formative</em></strong> (<span class="citation" data-cites="bollen_defense_2017">Bollen and Diamantopoulos (<a href="references.html#ref-bollen_defense_2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="rhemtulla_worse_2020">Rhemtulla, Van Bork, and Borsboom (<a href="references.html#ref-rhemtulla_worse_2020" role="doc-biblioref">2020</a>)</span>) and we shan’t speak of their kind any further.</p>
+<p>First, and most importantly, they are <strong><em>reflective</em></strong> latent variables, which means the direction of causality flows from unobservable entity, to measurable entity. For example, latent depression–which cannot be directly seen, or assessed–<em>causes</em> someone to lose sleep, have low mood, etc. (and thereby indicate as much in their questionnaire responses). Not the other way around. <em>Those</em> kinds of latent variables are referred to as <strong><em>formative</em></strong> (<span class="citation" data-cites="bollen_defense_2017">Bollen and Diamantopoulos (<a href="references.html#ref-bollen_defense_2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="rhemtulla_worse_2020">Rhemtulla, Van Bork, and Borsboom (<a href="references.html#ref-rhemtulla_worse_2020" role="doc-biblioref">2020</a>)</span>) –socioeconomic status is a classic example–and we shan’t speak of their kind any further.</p>
+<div id="fig-refvsform" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-refvsform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/reflective_vs_formative.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-refvsform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: A noble, reflective latent variable model on the left; an evil, formative latent variable model on the right
+</figcaption>
+</figure>
+</div>
 <p>Another important property is that we will focus exclusively on <strong><em>continuous</em></strong>/<strong><em>dimensional</em></strong> latent variables. That is, latent variables that exist on some sort of numeric scale (think ratio scale of measurement, STEVENS REF), where there can be smaller and larger precise amounts of the latent stuff. Latent variables can, however, be <strong><em>categorical</em></strong>/<strong><em>discrete</em></strong> instead–representing an underlying set of unobserverable categories (often referred to as <em>mixtures</em>), which may be ordered or unordered. Though mixture modeling is possible, with <em>latent class analysis</em>(<span class="citation" data-cites="collins_latent_2009">Collins and Lanza (<a href="references.html#ref-collins_latent_2009" role="doc-biblioref">2009</a>)</span>) and <em>latent profile analysis</em> (<span class="citation" data-cites="pastor_latent_2007">Pastor et al. (<a href="references.html#ref-pastor_latent_2007" role="doc-biblioref">2007</a>)</span>, <span class="citation" data-cites="rosenberg_tidylpa_2018">Rosenberg et al. (<a href="references.html#ref-rosenberg_tidylpa_2018" role="doc-biblioref">2018</a>)</span>) its classic instantiations, extending these frameworks to dyadic data is not without its complications<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Trust me that learning how to deploy latent dimensional models to dyadic data will be task enough. Besides, the vast majority of psychological entities are dimensional, not categorical (<span class="citation" data-cites="haslam_categories_2012">Haslam, Holland, and Kuppens (<a href="references.html#ref-haslam_categories_2012" role="doc-biblioref">2012</a>)</span>, OTHER HASLAM REF).</p>
 <p>Finally, the examples of dyadic SEM we will traverse in this book will all use continuous (or continu-ish) <strong><em>indicator</em></strong> or <strong><em>manifest</em></strong> variables (i.e., in which the underlying latent variable is reflected), like responses to self-report questionnaire items with some sort of likert-like rating scale. Discretely scaled indicators can be used with dyadic SEM, but require the use of different estimators (<a href="estimation.html" class="quarto-xref"><span>Chapter 7</span></a>), and there parameter estimates often have a different corresponding interpretation. We’ll see if I make time/space, when writing this book, to discuss these sorts of models, but they won’t be the prototypical case.</p>
 </section>
@@ -619,10 +654,41 @@ Figure&nbsp;2.1: The first of many stats-related memes
 <section id="what-is-structural-equation-modeling-sem" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="what-is-structural-equation-modeling-sem"><span class="header-section-number">2.3</span> What is “structural equation modeling (SEM)” ?</h2>
 <p>You likely have a workflow by which you determine what analysis is appropriate for you to pursue, given the data that you have. Have a binary outcome variable that you want to predict from a slew of predictor variables? A binary logistic regression model is probably the way to go. Have 20 or more days worth of questionnaire responses from a sample of individuals across a “daily diary” design? You’re probably in line for some kind of multilevel model.</p>
-<p>Likewise, SEM is an analytic framework that accomodates the modeling of certain kinds of data. The main distinctive feature is that unlike linear regression, logistic regression, or mulitlevel modeling–which only enable the analysis of one outcome variable at a time–SEM is a <strong><em>multivariate</em></strong> framework for data analysis, which means, <em>it faciltates the fitting of linear models to multiple outcome variables simultaneously</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. This property is key for dyadic SEM with latent variables, as each latent variable we want to model will require us to have multiple indicators that are causal manifestations (i.e., outcomes) of it.</p>
+<p>Likewise, SEM is an analytic framework that accomodates the modeling of certain kinds of data. The main distinctive feature is that unlike linear regression, logistic regression, or mulitlevel modeling–which only enable the analysis of one outcome variable at a time (i.e., they are <strong><em>univariate</em></strong> models)–SEM is a <strong><em>multivariate</em></strong> framework for data analysis, which means, <em>it faciltates the fitting of linear models to multiple outcome variables simultaneously</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<div id="fig-univariate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-univariate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/univariate.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-univariate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Some simple exemplar univariate models
+</figcaption>
+</figure>
+</div>
+<p>The multivariate-friendly feature of the SEM framework is key for dyadic SEM with latent variables, as each latent variable we want to model will require us to have multiple indicators that are causal manifestations (i.e., outcomes) of it.</p>
+<div id="fig-multivariate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-multivariate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/multivariate.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-multivariate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.6: Some simple exemplar multivariate models
+</figcaption>
+</figure>
+</div>
 <p>What kind of outcome variables? Like I said, we’ll focus on continuous outcome variables in this book for the most part<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. And like multilevel modeling, SEM has some capacity to accomodate dependent data (like from dyadic designs, and/or repeated assessments), though SEM can only handle so much dependency (~10 waves of data?) before models get unduly complex (we’ll return to this in <a href="longitudinal.html" class="quarto-xref"><span>Chapter 27</span></a>).</p>
 <p>Sounds like SEM is kind of an “all in one” analysis framework, doesn’t it? That’s because it is–and this is one of the reasons I’m such a fanatic about it! But this flexibility means that it’s worth clarifying some language up about how SEM is used. SEM can clearly be used for a variety of purposes–including the modeling of non-latent variables (e.g., observed sums, averages, and single-item responses). SEM has a rich history of being used to analyze this kind of data, from dyadic designs. Though this is, technically, “dyadic SEM”, it’s an application of dyadic SEM that makes little use of the unique analytic capacities of the framework. I therefore refer to this application as <strong><em>dyadic path analysis</em></strong>.</p>
 <p>I use the term <strong><em>dyadic SEM</em></strong>, therefore, to refer more specifically to dyadic models that primarily (but perhaps not exclusively) feature latent variables. And if one wants to analyze latent variables, the multivariate-friendly functionality of SEM is what’s needed.</p>
+<div id="fig-pathvssem" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pathvssem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./img/path_vs_sem.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pathvssem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.7: The same pattern of dyadic relations between constructs (hypothetical <em>X</em> and <em>Y</em>) represented using observed variables in what I refer to as a <em>dyadic path analysis</em> model, versus represented using latent variables in what I refer to as bona fide <em>dyadic SEM</em>
+</figcaption>
+</figure>
+</div>
 <p>But what SEM does tells you very little how it does it. The high-level summary is that the parameters (<a href="models.html" class="quarto-xref"><span>Chapter 5</span></a>) estimated in an SEM (<a href="estimation.html" class="quarto-xref"><span>Chapter 7</span></a>) are used in matrix algebra to solve for a set of guesses of what the variances and covariances of the variables in your model ought to be; these are then compared against what your variables’ variances and covariances actually are (<a href="modelfitindexes.html" class="quarto-xref"><span>Chapter 8</span></a>) in order to determine whether your model does a half-decent job representing the data. If it does, then you’re off to the races interpreting the estimated effects in your SEM. If not, then it’s back to the drawing board to select another model that performs better.</p>
 </section>
 <section id="what-is-r" class="level2" data-number="2.4">

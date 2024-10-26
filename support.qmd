@@ -1,6 +1,26 @@
-# How to Use and Support this Open-Access Book {.unnumbered}
+# License and Supporting this Open-Access Book {.unnumbered}
+
+## License
+
+© 2024 (John Sakaluk). All rights reserved. No part of this publication (including text, images, and code) may be reproduced, distributed, or transmitted in any form or by any means, including by AI or other automated methods, without proper attribution to the author.
+
+This book is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NonCommercial** — You may not use the material for commercial purposes.
+- **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+## Supporting this Open-Access Book
 
 My hope is that this book becomes useful well *before* it is finished. As such, please feel free to peruse its chapters; if there are concepts, explanations, or coding examples that help you, while the rest of the book is in progress, all the better. 
+
+### Citation
 
 For citing the book, please use: 
 
@@ -8,10 +28,17 @@ Sakaluk, J. K. (2024). *Dyadic structural equation modeling in R.* [https://jsak
 
 Citing this book, even while--*especially* while--under development is one of the first, most direct and helpful ways you can support the development of this book. I am still deliberating whether to approach a traditional publisher for the creation of a hardcover of this book, and citations will help to index what level of demand there is for its content. And even if go with an exclusively online + open-access dissemination approach, citations help to signal to me (and my institution) that this is a useful allocation of my time. Likewise, you can "star" the book's GitHub repo [here](https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R); this is the equivalent of a "like" in the GitHub space, and will help the book's visibility.
 
+### Sharing the Book
+
 Relatedly, if you are talking about your own dyadic SEM work elsewhere (conferences, invited brownbags, etc.,), and this book was of help to you with the analyses you share, you'd be doing me a favour by mentioning the book. I don't plan to shout from the rooftops--at least not for some time--that this book is "a thing", but if you are with an audience who might be prospective readers or users, I'd welcome you sharing the book's existence with them.
+
+### Improving the Book
 
 Submitting requests for additions, corrections, and clarifications at the [Issues page](https://github.com/jsakaluk/Dyadic-Structural-Equation-Modeling-in-R/issues) would also be enormously helpful. After all, I am writing this book *for you*; if something about the organization, coverage, and/or explanation(s) in the book is not working for you, the sooner I know, the sooner I can consider an alternative. 
 
+### Community Q&A 
+
 For inquiries that I don't think I can accomodate within the book, I would *strongly* encourage you to consider popping the question onto [CrossValidated (google's stats-related Q&A site) under the "dyadic-data" tag](https://stats.stackexchange.com/questions/tagged/dyadic-data) (which is criminally underused). CrossValidated is a pretty amazing site for getting answers to stats-related questions, and the dyadic-data tag goes virtually unusued. But unlike asking questions over Twitter, or a FaceBook group, or within somebody's email inbox, questions (and answers) on CrossValidated are permanent and searchable, meaning someone else can learn from excellent quesitons and answers. There's also a "reputation" currency/incentive structure, and so good questions and answers float to the top of a given thread, and folks who take the time to ask thoughtful quesitons or provide helpful answers are recognized in some way/shape/form--it's really a win-win resource that keeps giving to folks in need of help, long after the original posters have moved on.
 
+### Swag 
 Lastly, if you're into such things, I periodically have dyadic SEM "swag" on me at conferences, including hex stickers and (more infrequently) t-shirts for the packages I maintain (dySEM and dySim). Feel free to hit me up if you see me in the wild, and I'll be happy for you to help rep these offerings. 
